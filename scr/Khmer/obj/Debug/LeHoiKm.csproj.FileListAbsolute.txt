@@ -1,0 +1,2 @@
+D:\3. Code\LeHoiKm\LeHoiKm\obj\Debug\LeHoiKm.csproj.AssemblyReference.cache
+D:\3. Code\LeHoiKm\LeHoiKm\obj\Debug\LeHoiKm.csproj.CoreCompileInputs.cache
