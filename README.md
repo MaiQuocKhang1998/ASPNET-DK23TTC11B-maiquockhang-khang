@@ -70,27 +70,27 @@ ________________________________________
 1. Trang TrangChu.aspx:
 * Giao diện chính, hiển thị 4 lễ hội.
 * Có menu bên phải, hiệu ứng đóng/mở bằng JavaScript.
-*	Hiển thị Session["Username"].
+* Hiển thị Session["Username"].
 2. Các trang lễ hội:
-*	CholChnamThmay.aspx, OkOmBok.aspx, SeneDonta.aspx, DuaGheNgo.aspx
-*	Giao diện trình bày nội dung lễ hội.
-*	Cuối trang có form bình luận (TextBox + Button).
-*	Repeater để hiển thị bình luận từ database theo LeHoi.
+* CholChnamThmay.aspx, OkOmBok.aspx, SeneDonta.aspx, DuaGheNgo.aspx
+* Giao diện trình bày nội dung lễ hội.
+* Cuối trang có form bình luận (TextBox + Button).
+* Repeater để hiển thị bình luận từ database theo LeHoi.
 3. Trang Register.aspx:
-*	Form nhập: tên đăng nhập, mật khẩu, nhập lại mật khẩu, email, sđt.
-*	Kiểm tra:
-*	Không được bỏ trống
-*	Tên đăng nhập không trùng (SELECT * FROM Users WHERE Username = @Username)
-*	Mật khẩu nhập lại phải khớp
+* Form nhập: tên đăng nhập, mật khẩu, nhập lại mật khẩu, email, sđt.
+* Kiểm tra:
+* Không được bỏ trống
+* Tên đăng nhập không trùng (SELECT * FROM Users WHERE Username = @Username)
+* Mật khẩu nhập lại phải khớp
 4. Trang Login.aspx:
-*	Nhập tên đăng nhập và mật khẩu
-*	Kiểm tra trong bảng Users
-*	Nếu đúng: Session["Username"] = txtUsername.Text;
-*	Nếu sai: thông báo lỗi
+* Nhập tên đăng nhập và mật khẩu
+* Kiểm tra trong bảng Users
+* Nếu đúng: Session["Username"] = txtUsername.Text;
+* Nếu sai: thông báo lỗi
 5. Trang ThongTinCaNhan.aspx:
-*	Truy vấn thông tin từ bảng Users theo Session["Username"]
-*	Hiển thị thông tin cá nhân
-________________________________________
+* Truy vấn thông tin từ bảng Users theo Session["Username"]
+* Hiển thị thông tin cá nhân
+_______________________________________
 📝 PHẦN 6: CHÈN DỮ LIỆU MẪU
 1. 10 người dùng mẫu:
 sql
@@ -108,7 +108,7 @@ INSERT INTO BinhLuan (Ten, NoiDung, LeHoi) VALUES
 ...
 ('Bình', 'Bình luận về OkOmBok', 'OkOmBok'),
 ...
--- Tương tự cho 4 lễ hội
+* Tương tự cho 4 lễ hội
 ________________________________________
 ✅ PHẦN 7: CHẠY THỬ VÀ KIỂM TRA
 1.Nhấn Start (F5) trong Visual Studio để chạy.
@@ -118,12 +118,12 @@ ________________________________________
 5.Đăng xuất → quay về trang mặc định.
 ________________________________________
 📦 TỔNG KẾT
-*Chức năng	Trạng thái
-*Tạo cơ sở dữ liệu	✅
-*Giao diện các trang	✅
-*Đăng ký + kiểm tra	✅
-*Đăng nhập	✅
-*Quản lý phiên Session	✅
-*Bình luận từng lễ hội	✅
-*Menu sidebar động	✅
-*Dữ liệu mẫu	✅
+*Chức năng	            Trạng thái
+*Tạo cơ sở dữ liệu              ✅
+*Giao diện các trang	        ✅
+*Đăng ký + kiểm tra       	✅
+*Đăng nhập	                ✅
+*Quản lý phiên Session    	✅
+*Bình luận từng lễ hội    	✅
+*Menu sidebar động        	✅
+*Dữ liệu mẫu	                ✅
