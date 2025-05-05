@@ -1,6 +1,7 @@
 # 1. Thông tin người thực hiện:
    * Họ và tên: Mai Quốc Khang
    * Số điện thoại: 0907534247
+   * gmail: khang1998k@gmail.com
 # 2. Đề tài: Xây dựng website giới thiệu các lễ hội của người dân tộc Khmer.
   Dưới đây là hướng dẫn đầy đủ từ đầu, bao gồm cả cài đặt phần mềm cần thiết và lập trình website ASP.NET Web Forms giới thiệu các lễ hội Khmer.
 ________________________________________
