@@ -171,7 +171,7 @@
                 <img class="news-image" src="images/chol-chnam-thmay.jpg" alt="Chol Chnam Thmay" />
                 <div class="news-content">
                     <div class="news-title">Lễ hội Tết Chôl Chnăm Thmây – Tết cổ truyền của người Khmer</div>
-                    <div class="news-date">25/04/2025 08:00</div>
+                    <div class="news-date"> Đăng nhập để xem chi tiết</div>
                 </div>
             </div>
 
@@ -179,7 +179,7 @@
                 <img class="news-image" src="images/ok-om-bok.jpg" alt="Ok Om Bok" />
                 <div class="news-content">
                     <div class="news-title">Lễ hội Ok Om Bok – Cảm tạ thần Mặt Trăng cho mùa màng bội thu</div>
-                    <div class="news-date">24/04/2025 15:20</div>
+                    <div class="news-date">Đăng nhập để xem chi tiết</div>
                 </div>
             </div>
 
@@ -187,7 +187,7 @@
                 <img class="news-image" src="images/sene-donta.jpg" alt="Sene Donta" />
                 <div class="news-content">
                     <div class="news-title">Lễ hội Sene Đôn Ta – Ngày báo hiếu tổ tiên của người Khmer</div>
-                    <div class="news-date">23/04/2025 09:45</div>
+                    <div class="news-date">Đăng nhập để xem chi tiết</div>
                 </div>
             </div>
 
@@ -195,7 +195,7 @@
                 <img class="news-image" src="images/dua-ghe-ngo.jpg" alt="Đua ghe Ngo" />
                 <div class="news-content">
                     <div class="news-title">Lễ hội đua ghe Ngo – Sôi động trên sông nước miền Tây</div>
-                    <div class="news-date">22/04/2025 17:10</div>
+                    <div class="news-date">Đăng nhập để xem chi tiết</div>
                 </div>
             </div>
         </div>
