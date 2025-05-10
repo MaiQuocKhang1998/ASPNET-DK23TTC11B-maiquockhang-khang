@@ -1,0 +1,111 @@
+﻿USE [KhmerFestivalsDB]
+GO
+/****** Object:  Table [dbo].[BinhLuan]    Script Date: 04/05/2025 6:59:13 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[BinhLuan](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Ten] [nvarchar](100) NULL,
+	[NoiDung] [nvarchar](max) NULL,
+	[LeHoi] [nvarchar](50) NULL,
+	[ThoiGian] [datetime] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Users]    Script Date: 04/05/2025 6:59:13 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Users](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[Username] [nvarchar](50) NOT NULL,
+	[Password] [nvarchar](100) NOT NULL,
+	[Email] [nvarchar](100) NULL,
+	[Phone] [nvarchar](20) NULL,
+	[CreateDate] [datetime] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY],
+UNIQUE NONCLUSTERED 
+(
+	[Username] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[BinhLuan] ADD  DEFAULT (getdate()) FOR [ThoiGian]
+GO
+ALTER TABLE [dbo].[Users] ADD  DEFAULT (getdate()) FOR [CreateDate]
+GO
+
+
+-- CholChnamThmay
+INSERT INTO BinhLuan (Ten, NoiDung, LeHoi) VALUES 
+(N'An Nhiên', N'Lễ hội rất tuyệt vời, cảm ơn vì bài viết!', N'CholChnamThmay'),
+(N'Hoàng Long', N'Năm nào tôi cũng tham gia lễ hội này.', N'CholChnamThmay'),
+(N'Mai Phương', N'Hình ảnh lễ hội rất đẹp.', N'CholChnamThmay'),
+(N'Thanh Tâm', N'Lễ hội mang đậm bản sắc dân tộc.', N'CholChnamThmay'),
+(N'Ngọc Hân', N'Mình muốn tham gia thử một lần!', N'CholChnamThmay'),
+(N'Trung Hiếu', N'Bài viết hữu ích và chi tiết.', N'CholChnamThmay'),
+(N'Khánh An', N'Tết truyền thống của người Khmer thật ý nghĩa.', N'CholChnamThmay'),
+(N'Lê Hằng', N'Thật vui khi được tìm hiểu về lễ hội này.', N'CholChnamThmay'),
+(N'Phúc Lâm', N'Mình đã từng đến Sóc Trăng vào dịp này, rất vui.', N'CholChnamThmay'),
+(N'Bảo Ngọc', N'Thông tin rất thú vị!', N'CholChnamThmay');
+
+-- DuaGheNgo
+INSERT INTO BinhLuan (Ten, NoiDung, LeHoi) VALUES 
+(N'Huy Hoàng', N'Đua ghe Ngo rất sôi động!', N'DuaGheNgo'),
+(N'Thảo Vy', N'Mình thích không khí lễ hội này.', N'DuaGheNgo'),
+(N'Nam Phong', N'Các đội thi rất chuyên nghiệp.', N'DuaGheNgo'),
+(N'Lan Anh', N'Lễ hội thể hiện tinh thần đoàn kết.', N'DuaGheNgo'),
+(N'Việt Anh', N'Tuyệt vời! Nên được quảng bá rộng rãi hơn.', N'DuaGheNgo'),
+(N'Kim Tuyến', N'Mình rất thích xem đua ghe.', N'DuaGheNgo'),
+(N'Tuấn Kiệt', N'Khung cảnh rất đẹp và náo nhiệt.', N'DuaGheNgo'),
+(N'Thị Mai', N'Cảm ơn bài viết đã chia sẻ.', N'DuaGheNgo'),
+(N'Phan Anh', N'Lễ hội mang đậm bản sắc văn hóa miền Tây.', N'DuaGheNgo'),
+(N'Trúc Quỳnh', N'Trẻ em cũng rất thích lễ hội này.', N'DuaGheNgo');
+
+-- OkOmBok
+INSERT INTO BinhLuan (Ten, NoiDung, LeHoi) VALUES 
+(N'Hương Giang', N'Lễ hội rất truyền thống và ý nghĩa.', N'OkOmBok'),
+(N'Bá Trung', N'Người dân rất thân thiện và nhiệt tình.', N'OkOmBok'),
+(N'Thiên Phúc', N'Không khí lễ hội rất ấm áp.', N'OkOmBok'),
+(N'Thi Mai', N'Mình muốn được trải nghiệm thực tế.', N'OkOmBok'),
+(N'Vĩnh Phát', N'Mình đã nghe nói nhiều về lễ hội này.', N'OkOmBok'),
+(N'Thanh Nhàn', N'Bài viết nhiều thông tin bổ ích.', N'OkOmBok'),
+(N'Ngọc Linh', N'Thật ấn tượng với các nghi lễ.', N'OkOmBok'),
+(N'Quang Huy', N'Các hoạt động rất đa dạng.', N'OkOmBok'),
+(N'Phạm Oanh', N'Thích nhất là lễ cảm tạ thần Mặt Trăng.', N'OkOmBok'),
+(N'Thảo Trang', N'Rất tuyệt! Hy vọng năm sau được tham dự.', N'OkOmBok');
+
+-- SeneDonta
+INSERT INTO BinhLuan (Ten, NoiDung, LeHoi) VALUES 
+(N'Trung Dũng', N'Lễ hội rất thiêng liêng và xúc động.', N'SeneDonta'),
+(N'Hồng Hà', N'Ngày báo hiếu tổ tiên thật ý nghĩa.', N'SeneDonta'),
+(N'Quỳnh Chi', N'Giới trẻ cần hiểu rõ về lễ hội này.', N'SeneDonta'),
+(N'Tiến Đạt', N'Mình thấy đây là dịp để gắn kết gia đình.', N'SeneDonta'),
+(N'Bích Phượng', N'Lễ hội giúp lưu giữ văn hóa Khmer.', N'SeneDonta'),
+(N'Văn Khoa', N'Mình đã đến Trà Vinh mùa lễ hội, rất đẹp.', N'SeneDonta'),
+(N'Hồng Nhung', N'Các nghi thức truyền thống rất ý nghĩa.', N'SeneDonta'),
+(N'Chí Tâm', N'Lễ hội mang lại cảm giác bình yên.', N'SeneDonta'),
+(N'Thiện Nhân', N'Rất nên được đưa vào chương trình học.', N'SeneDonta'),
+(N'Mỹ Linh', N'Yêu nét văn hóa dân tộc Khmer.', N'SeneDonta');
+
+INSERT INTO Users (Username, Password, Email, Phone, CreateDate) VALUES
+('an.nhien', '123456', 'an.nhien@example.com', '0912345670', GETDATE()),
+('hoanglong', '123456', 'hoang.long@example.com', '0912345671', GETDATE()),
+('maiphuong', '123456', 'mai.phuong@example.com', '0912345672', GETDATE()),
+('thanh.tam', '123456', 'thanh.tam@example.com', '0912345673', GETDATE()),
+('ngochan', '123456', 'ngoc.han@example.com', '0912345674', GETDATE()),
+('trunghieu', '123456', 'trung.hieu@example.com', '0912345675', GETDATE()),
+('lehang', '123456', 'le.hang@example.com', '0912345676', GETDATE()),
+('phuclamm', '123456', 'phuc.lam@example.com', '0912345677', GETDATE()),
+('baongoc', '123456', 'bao.ngoc@example.com', '0912345678', GETDATE()),
+('tienhoang', '123456', 'tien.hoang@example.com', '0912345679', GETDATE());
+
